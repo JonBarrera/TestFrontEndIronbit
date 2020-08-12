@@ -1,0 +1,30 @@
+{
+  "name": "TestFrontEndIronbit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JonBarrera/TestFrontEndIronbit.git"
+  },
+  "keywords": [],
+  "author": "JonBarrera",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JonBarrera/TestFrontEndIronbit/issues"
+  },
+  "homepage": "https://github.com/JonBarrera/TestFrontEndIronbit#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "ejs": "^3.1.3",
+    "express": "^4.17.1",
+    "mongojs": "^3.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

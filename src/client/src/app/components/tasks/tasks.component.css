@@ -1,0 +1,65 @@
+.displayim{
+    width: 50px;
+    height: 50px;
+    margin-left: auto;
+    display: table-row;
+}
+
+.sincolor{
+    background-color: transparent;
+    border: 0;
+    margin-left: auto;
+}
+.addNocolor{
+    background-color: transparent;
+    border: 0;
+}
+input[type="text"]
+{
+    background: transparent;
+    border: none;
+    color: white;
+}
+
+.addIn{
+    padding-left: 15px;
+}
+
+th{
+    background-color: yellowgreen;
+    border-radius:5px 5px 0px 0px;
+}
+
+tbody{
+    background-color: white;
+    border-radius:0px 0px 5px 5px;
+}
+button{
+    background-color: teal;
+    color: white;
+    width: 150%;
+    height: 120%;
+    border: 0;
+}
+
+input{
+    color:white;
+}
+
+.messageEmpty{
+    text-align: center;
+    background-color: white;
+    border-radius:0px 0px 5px 5px;
+}
+
+.buttonDelete{
+    width: 25px;
+    height: 25px;
+    position: static;
+}
+.buttonDeleteCenter{
+        margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+}

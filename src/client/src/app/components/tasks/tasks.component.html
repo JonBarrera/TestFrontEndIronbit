@@ -1,0 +1,45 @@
+<div class="card col-12 addNocolor">
+    <div class="card-body mt-5">
+        <form (submit)="addTask($event)">
+            <div class="input-group">
+                <input type="text" name="title" [(ngModel)]="title" name="title" placeholder="Agrega una nueva tarea" class="form-control">
+                <span class="input-group-addon addIn">
+                    <button type="submit">
+                        Agregar
+                    </button>
+                </span>
+            </div>
+        </form>
+    </div>
+</div>
+
+<table  class="table">
+    <thead>
+        <th>
+            ToDo List by Iron bit
+        </th>
+        <th>            
+            <img src="/./././assets/Buttons/recycle-bin.svg" class="displayim">
+        </th>
+    </thead>
+    <tbody>
+        <ng-container *ngIf="tasks && tasks.length; else elseTemplate">
+            <tr *ngFor="let task of tasks">
+                <td>{{ task.title }}</td>
+                <td>
+                    <div class="row justify-content-center">
+                  <button class="sincolor" (click)="deleteTask(task._id)">
+                    <img src="/./././assets/Buttons/remove.svg" class="buttonDelete">
+                  </button>
+                  </div>
+                </td>
+            </tr>
+          </ng-container>
+          <ng-template #elseTemplate>
+            <td class="messageEmpty">
+                <h6>No hay ToDo`s, tomate una cafè!</h6>
+            </td>
+            <td></td>
+          </ng-template>
+    </tbody>
+</table>
