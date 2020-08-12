@@ -1,4 +1,4 @@
-const router = require('express').Router();
+const router = require('express-promise-router')();
 const mongojs = require('mongojs');
 const db = mongojs('mongodb+srv://TestFront:TestFront123@cluster0.hrrfl.mongodb.net/mean-db?retryWrites=true&w=majority', ['tasks']);
 
