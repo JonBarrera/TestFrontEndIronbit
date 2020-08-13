@@ -1,6 +1,6 @@
 const router = require('express-promise-router')();
 const mongojs = require('mongojs');
-const db = mongojs('mongodb+srv://TestFront:TestFront123@cluster0.hrrfl.mongodb.net/mean-db?retryWrites=true&w=majority', ['tasks']);
+const db = mongojs(process.env.MONGODB_URI, ['tasks']);
 
 router.get('/tasks', (req, res, next) => {
     db.tasks.find((err, tasks) => {
