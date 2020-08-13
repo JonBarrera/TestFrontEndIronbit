@@ -8,7 +8,7 @@ const path = require('path');
 const app = express();
 
 //Rutas
-const indexRoutes = require('./routes/index');
+//const indexRoutes = require('./routes/index');
 const tasksRoutes = require('./routes/tasks');
 //Settings
 //Configure if there is a server to deploy or use port 3000 for development and uncomment ejs if you are developing 
