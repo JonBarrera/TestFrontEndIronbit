@@ -1,4 +1,4 @@
-if (process.env.NODE_ENV !== 'production') {
+if (process.env.NODE_ENV !== 'development') {
     require('dotenv').config();
 }
 
@@ -8,7 +8,7 @@ const path = require('path');
 const app = express();
 
 //Rutas
-const indexRoutes = require('./routes/index');
+//const indexRoutes = require('./routes/index');
 const tasksRoutes = require('./routes/tasks');
 //Settings
 //Configure if there is a server to deploy or use port 3000 for development and uncomment ejs if you are developing 
@@ -23,7 +23,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 
 //Rutas
-app.use('/', indexRoutes);
+//app.use('/', indexRoutes);
 app.use('/api',tasksRoutes);
 
 //static files
