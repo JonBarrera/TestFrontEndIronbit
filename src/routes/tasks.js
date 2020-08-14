@@ -1,4 +1,4 @@
-const router = require('express-promise-router')();
+const router = require('express').Router();
 const mongojs = require('mongojs');
 const db = mongojs(process.env.MONGODB_URI, ['tasks']);
 
