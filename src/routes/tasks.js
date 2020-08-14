@@ -1,4 +1,4 @@
-const router = require('express').Router();
+const router = require('vercel');
 const mongojs = require('mongojs');
 const db = mongojs(process.env.MONGODB_URI, ['tasks']);
 
