@@ -27,7 +27,7 @@ app.use(express.urlencoded({extended: false}));
 app.use('/api',tasksRoutes);
 
 //static files
-   app.use(express.static(path.join(__dirname, './dist/client')));
+   app.use(express.static(path.join(__dirname, 'dist')));
 //start server
 app.listen(app.get('port'), () => {
     console.log('server on', app.get('port'));
