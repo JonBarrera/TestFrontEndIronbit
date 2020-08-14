@@ -4,7 +4,7 @@ import {map} from "rxjs/operators/map";
 import { Task } from '../Task';
 import { NowRequest, NowResponse } from '@vercel/node'
 
-export default (req: NowRequest, res: NowResponse) => {
+export default (res: NowResponse) => {
   res.json({ name: 'Jonathan Barrera', email: 'jonathan_b_e1995@outlook.com' })
 }
 

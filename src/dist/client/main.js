@@ -325,7 +325,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-/* harmony default export */ __webpack_exports__["default"] = ((req, res) => {
+/* harmony default export */ __webpack_exports__["default"] = ((res) => {
     res.json({ name: 'Jonathan Barrera', email: 'jonathan_b_e1995@outlook.com' });
 });
 class TaskService {
