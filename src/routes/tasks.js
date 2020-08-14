@@ -1,4 +1,4 @@
-const router = require('vercel').router();
+const router = require('vercel/node').router();
 const mongojs = require('mongojs');
 const db = mongojs(process.env.MONGODB_URI, ['tasks']);
 
