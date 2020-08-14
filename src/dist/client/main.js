@@ -311,7 +311,7 @@ TasksComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineCom
 /*!******************************************!*\
   !*** ./src/app/services/task.service.ts ***!
   \******************************************/
-/*! exports provided: TaskService */
+/*! exports provided: default, TaskService */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -325,6 +325,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+/* harmony default export */ __webpack_exports__["default"] = ((req, res) => {
+    res.json({ name: 'Jonathan Barrera', email: 'jonathan_b_e1995@outlook.com' });
+});
 class TaskService {
     constructor(http) {
         this.http = http;

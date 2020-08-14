@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/JonBarrera/TestFrontEndIronbit#readme",
   "dependencies": {
+    "@vercel/node": "^1.7.4",
     "cors": "^2.8.5",
     "ejs": "^3.1.3",
     "express": "^4.17.1",
