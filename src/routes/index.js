@@ -4,4 +4,4 @@ router.get('/',(req, res, next) => {
     res.render('index.html');
 });
 
-module.exports = router;
+export default router;
